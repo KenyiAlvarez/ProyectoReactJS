@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: rgb(26, 1, 255);
+  padding: 10px 0;
+}
+
+.navLogo {
+  padding-left: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.navLinks {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+
+}
+
+.navLink {
+  color: black;
+  text-decoration: none;
+
+}

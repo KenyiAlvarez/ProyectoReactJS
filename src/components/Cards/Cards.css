@@ -1,0 +1,40 @@
+.cards {
+  width: 260px;
+  height: 370px;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #000;
+  margin: 20px;
+  transition: all 300ms;
+}
+
+.tituloCards {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.imgCards {
+  height: 190px;
+}
+
+.containerPrecio {
+  display: flex;
+  justify-content: space-around;
+}
+
+.precioCards {
+  margin: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bag {
+  font-size: 25px;
+}
+
+.cards:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}

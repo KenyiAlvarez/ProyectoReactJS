@@ -1,0 +1,35 @@
+.itemDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgDetail {
+  height: 400px;
+}
+
+.dataPrd {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #272727;
+}
+
+.itemDescrip {
+  font-size: 18px;
+  font: 600;
+}
+
+.prodcPrecio {
+  font-size: 25px;
+}
+
+.precioItem {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
