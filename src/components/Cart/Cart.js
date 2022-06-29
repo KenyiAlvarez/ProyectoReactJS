@@ -2,9 +2,10 @@ import { useCartContext } from "../../context/CartContext"
 import { IoMdClose } from "react-icons/io"
 import { Link } from "react-router-dom"
 
+
 export const Cart = () =>{
 
-    const {cart, totalPrice, removeItem ,empycart} = useCartContext()
+    const {cart, totalPrice, removeItem ,emptyCart} = useCartContext()
 
     if (cart.length === 0) {
         return (
@@ -43,7 +44,9 @@ export const Cart = () =>{
                 <h4>Total: €{totalPrice()}</h4>
             </div>
 
-            <button onClick={empycart} className="btn btn-danger" >Vacias Carrito</button>
+            <button onClick={emptyCart} className="btn btn-danger" >Vacias Carrito</button>
+
+            <Link to={"/checkout"} className="btn btn-success mx-4">Terminar mi compra</Link>
         </div>
     )
 
