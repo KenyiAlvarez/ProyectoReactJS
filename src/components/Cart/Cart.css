@@ -1,4 +1,40 @@
+.containerCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconRemove {
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.imgCardsCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  display: block;
+  max-width: 100%;
+  border: none;
+}
+
+.titleCartProd {
+  font-size: 20px;
+}
+
 .detail {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50%;
+  font-size: 20px;
+}
+
+.buttonsDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

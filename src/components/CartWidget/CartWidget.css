@@ -7,8 +7,10 @@
   color: black;
 }
 
-.cantCart {
-  color: black;
+.totalCart {
   font-size: 18px;
-  padding: 5px;
+  border-radius: 50%;
+  padding: 0 5px;
+  position: absolute;
+  color: black;
 }

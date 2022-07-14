@@ -1,52 +1,46 @@
 import { useCartContext } from "../../context/CartContext"
-import { IoMdClose } from "react-icons/io"
+import { IoMdTrash } from "react-icons/io"
 import { Link } from "react-router-dom"
-
+import { EmptyCart } from "../EmptyCart/EmptyCart"
+import "./Cart.css" 
 
 export const Cart = () =>{
 
     const {cart, totalPrice, removeItem ,emptyCart} = useCartContext()
 
-    if (cart.length === 0) {
-        return (
-            <div className="container my-5">
-                <h2>Tu carrito esta vacio</h2>
-                <hr/>
+    if (cart.length === 0) return <EmptyCart/>
 
-                <Link to="/" className="btn btn-primary">Ir a comprar</Link>
-            </div>
-        )
-    }
-
-    return(
+    return (
         <div className="container my-5">
-            
-            <h2>Mi carrito</h2>
-            <hr/>
+            <h2>Carrito de la compra</h2>
+            <hr />
+
             {
-                cart.map((item) => (
-                <div key={item.id} className="my-2">
-                    <IoMdClose onClick={() => removeItem(item.id)} />
-                    <img className="imgCards" alt="img Productos" src={item.img} />
-                    <h2>{item.nombre}</h2>
-                    <p>Cantidad: {item.cantidad}</p>
-                    <strong>Precio: €{item.precio * item.cantidad}</strong>
-                    <hr/>
-                </div>))
+            cart.map((item) => (
+
+            <div key={item.id} className="my-2 container">
+
+                <div className="containerCart">
+                    <IoMdTrash className="iconRemove" onClick={() => removeItem(item.id)} />
+                    <img className="imgCardsCart" alt={item.nombre} src={item.img} />
+                    <h2 className="titleCartProd">{item.nombre}</h2>
+                    <strong>Cantidad: {item.cantidad}</strong>
+                    <strong className="prodPre">Precio: ${item.precio * item.cantidad}</strong>
+                    <hr />
+                </div>
+                <hr />
+
+            </div>))
             }
 
             <div className="container my-5 detail">
-                <p>Total del Carrito</p>
-                
-                    
-                <hr/>
-
-                <h4>Total: €{totalPrice()}</h4>
+                <strong>Total del Carrito:  €{totalPrice()}</strong>
             </div>
+            <div>
+                <button onClick={emptyCart} className="btn btn-danger" >Vacias Carrito</button>
 
-            <button onClick={emptyCart} className="btn btn-danger" >Vacias Carrito</button>
-
-            <Link to={"/checkout"} className="btn btn-success mx-4">Terminar mi compra</Link>
+                <Link to={"/checkout"} className="btn btn-success mx-4">Terminar mi compra</Link>
+            </div>
         </div>
     )
 

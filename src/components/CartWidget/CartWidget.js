@@ -5,13 +5,15 @@ import { useCartContext } from '../../context/CartContext';
 
 export const CartWidget = () =>{
 
-    const {totalQuantity} = useCartContext()
+    const {totalQuantity, cart} = useCartContext()
 
+    if (cart.length === 0) return <Link to={"/"}/>
+    
     return(
         <div className='cart'>
             <Link to="/cart">
                 <FaCartPlus className="iconCarrito"/>
-                <span className='cantCart'>{totalQuantity()}</span>
+                <span className={`totalCart ${totalQuantity() === 0 ? "hidden" : " "}`}>{totalQuantity()}</span>
             </Link>
         </div>
     )

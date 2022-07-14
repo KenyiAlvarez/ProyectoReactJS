@@ -19,10 +19,13 @@ para poder visualizarla siga los siguientes pasos:
 
 O estara disponible en: [http://localhost:3000](http://localhost:3000)
 
+
+
 ## Dependecias utilizadas
 
- - CSS para dar estilo a la App.
+ - CSS, Booststrap 5: para dar estilo a la App.
  - Uso de React Router Dom para la navegacion
+ - Uso de FireBase para los datos y guardar lar ordenes que genera el usuario
  
 
 ### AUTOR

@@ -1,0 +1,21 @@
+.containerEmpty {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .emptyContainer {
+    margin: 20px;
+  }
+  
+  .iconCartEmpty {
+    font-size: 50px;
+  }
+  
+  .cartEmptyText {
+    font-size: 25px;
+  }
+  
+  .empty {
+    font-weight: 500;
+    font-size: 25px;
+  }
