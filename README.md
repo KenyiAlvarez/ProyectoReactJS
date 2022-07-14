@@ -1,6 +1,8 @@
 # TECNOLOGIA 💻
 
-Sitio web enfocado en la venta de artefactos asociados a la tecnologia.
+Sitio web enfocado a la venta de computadoras y celulares.
+
+GIF de presentacion:
 
 ![Presentacion](https://user-images.githubusercontent.com/90514658/178883488-e2da1ec0-855d-431a-8f49-202292dba0ac.gif)
 
