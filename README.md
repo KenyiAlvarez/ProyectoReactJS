@@ -2,10 +2,13 @@
 
 Sitio web enfocado en la venta de artefactos asociados a la tecnologia.
 
+![Presentacion](https://user-images.githubusercontent.com/90514658/178883488-e2da1ec0-855d-431a-8f49-202292dba0ac.gif)
+
 ## Ecommerce-KenyiAlvarez / CoderHouse
 
 Primer pagina web empleando Reactjs.
 para poder visualizarla siga los siguientes pasos:
+
 
 ### `INSTALACION`
 1. Clonar el repositorio
